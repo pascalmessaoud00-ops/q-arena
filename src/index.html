@@ -21,8 +21,9 @@
       <svg class="brand-mark" viewBox="0 0 30 30" aria-hidden="true"><rect x="1" y="1" width="28" height="28" rx="6" class="bm-bg"/><g class="bm-grid"><path d="M7 1v28M13 1v28M19 1v28M25 1v28M1 7h28M1 13h28M1 19h28M1 25h28"/></g><circle cx="10" cy="22" r="3.6" class="bm-me"/><circle cx="22" cy="10" r="3.6" class="bm-foe"/></svg>
       <span class="brand-name">Q-Arena</span>
     </div>
-    <div class="res" id="res"></div>
+    <select id="langSel" class="langsel" aria-label="Sprache / Language"></select>
     <button class="btn sm" id="installBtn" hidden>Installieren</button>
+    <div class="res" id="res"></div>
   </header>
 
   <nav class="tabbar" id="tabs" role="tablist" aria-label="Bereiche">
@@ -38,8 +39,8 @@
 
   <div id="battle" class="battle" hidden></div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-  <div id="updateBar" class="updatebar" hidden><span>Neue Version verfügbar.</span><button class="btn sm primary" id="updateBtn">Neu laden</button></div>
-  <noscript><p class="noscript">Q-Arena braucht JavaScript.</p></noscript>
+  <div id="updateBar" class="updatebar" hidden><span id="updateText">Neue Version verfügbar.</span><button class="btn sm primary" id="updateBtn">Neu laden</button></div>
+  <noscript><p class="noscript">Q-Arena braucht JavaScript. · Q-Arena needs JavaScript.</p></noscript>
   <script type="module" src="js/app.js"></script>
 </body>
 </html>

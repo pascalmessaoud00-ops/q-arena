@@ -53,6 +53,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .chip .lbl { font-family: var(--f-mono); font-size: .62rem; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); }
 .chip b { font-family: var(--f-mono); font-variant-numeric: tabular-nums; font-size: .98rem; }
 .chip.coin b { color: var(--gold); }
+.langsel { min-height: 32px; padding: 3px 8px; font-size: .82rem; font-family: var(--f-mono); }
+@media (max-width: 819px) { .res { order: 3; width: 100%; } }
 .chip.bump { animation: bump .5s ease; }
 @keyframes bump { 35% { transform: translateY(-3px); border-color: var(--gold); } }
 

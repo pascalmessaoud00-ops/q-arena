@@ -39,6 +39,12 @@ Einschränkung auf dem iPhone: Links öffnen sich immer in Safari, nicht in der 
 
 Der Link ist nur für dieses eine Duell gültig. Er enthält die Verbindungsdaten des Geräts, aber keine Spielstände oder persönlichen Daten.
 
+## Sprachen
+
+Q-Arena gibt es auf Deutsch und Englisch, umschaltbar oben rechts. Beim ersten Start richtet sich die Sprache nach dem Gerät. Die Wahl wird gespeichert und gilt unabhängig vom Spielstand.
+
+Neue Sprache hinzufügen: In `q-arena/js/i18n.js` ein weiteres Wörterbuch nach dem Muster von `en` anlegen, es in `DICT` und `LANGS` eintragen und bei `LOCALE` das Zahlenformat ergänzen. Fehlende Einträge fallen automatisch auf Deutsch zurück.
+
 ## Updates ausrollen
 
 Der Service Worker hält alle Dateien offline vor. Nach jeder Änderung an Dateien in `q-arena/` in `q-arena/sw.js` die Konstante `VERSION` erhöhen (z. B. `qarena-v2`). Installierte Apps zeigen dann "Neue Version verfügbar".
@@ -58,4 +64,6 @@ Dann `http://localhost:8123` öffnen. Ein Doppelklick auf `index.html` reicht ni
 | `js/brain.js` | Sensoren, Q(λ)-Learning, Taktiken, Liga-Gegner, Kampfkraft-Messung |
 | `js/net.js` | Online-Duell über WebRTC mit Code-Austausch, ohne eigenen Server |
 | `js/app.js` | Oberfläche, Spielstand, Kampfansicht, Shop |
+| `js/i18n.js` | Alle Texte der Oberfläche auf Deutsch und Englisch |
+| `js/qr.js` | QR-Code-Erzeugung für Einladungen, ohne externe Bibliothek |
 | `sw.js`, `manifest.webmanifest`, `icons/` | PWA: Offline-Cache, Installation, App-Icons |

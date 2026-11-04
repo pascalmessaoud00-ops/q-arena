@@ -1,9 +1,9 @@
 // Q-Arena – Service Worker: alles vorab zwischenspeichern, danach komplett offline.
 // Bei jeder Änderung an den App-Dateien VERSION erhöhen, sonst sehen installierte Apps das Update nicht.
-const VERSION = 'qarena-v2';
+const VERSION = 'qarena-v4';
 const FILES = [
   './', 'index.html', 'style.css', 'manifest.webmanifest',
-  'js/app.js', 'js/engine.js', 'js/brain.js', 'js/net.js', 'js/qr.js',
+  'js/app.js', 'js/engine.js', 'js/brain.js', 'js/net.js', 'js/qr.js', 'js/i18n.js',
   'icons/icon-192.png', 'icons/icon-512.png', 'icons/maskable-512.png', 'icons/apple-touch-icon.png',
 ];
 
