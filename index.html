@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>KI-Trainingsspiele</title>
+  <meta name="theme-color" content="#0f1319">
+  <style>
+    :root { --bg: #0f1319; --surface: #171d26; --line: #2b3544; --ink: #e7ecf3; --muted: #94a0b2; --accent: #3fc1d9; color-scheme: dark; }
+    @media (prefers-color-scheme: light) { :root { --bg: #eef1f5; --surface: #fff; --line: #d5dbe4; --ink: #141a23; --muted: #566377; --accent: #0b88a1; color-scheme: light; } }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.5 system-ui, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 720px; margin: 0 auto; padding: 40px max(16px, env(safe-area-inset-right)) 40px max(16px, env(safe-area-inset-left)); display: flex; flex-direction: column; gap: 16px; }
+    h1 { font-family: "Bahnschrift", system-ui, sans-serif; letter-spacing: .02em; margin: 0; }
+    a.game { display: block; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; color: inherit; text-decoration: none; }
+    a.game:hover, a.game:focus-visible { border-color: var(--accent); outline: none; }
+    a.game b { font-size: 1.2rem; color: var(--accent); }
+    p { margin: 4px 0 0; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>KI-Trainingsspiele</h1>
+    <a class="game" href="q-arena/"><b>Q-Arena</b><p>Trainiere einen KI-Kämpfer auf einem 5×5-Feld, rüste ihn aus und fordere die Liga oder Kollegen online heraus. Installierbar als App, läuft offline.</p></a>
+    <a class="game" href="tic-tac-q.html"><b>Tic-Tac-Q Labor</b><p>Der Einstieg: ein Tic-Tac-Toe-Agent, der mit Q-Learning besser wird.</p></a>
+  </main>
+</body>
+</html>
